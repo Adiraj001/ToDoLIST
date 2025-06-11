@@ -1,0 +1,143 @@
+* {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100%;
+            min-height: 100vh;
+            background: linear-gradient(142deg, #df0d0d, #145fd0);
+            padding: 10px;
+        }
+
+        .todo {
+            width: 100%;
+            max-width: 50%;
+            background-color: #fff;
+            border-radius: 10px;
+            margin: 100px auto 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 40px 30px 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        .todo h2 {
+            color: #000000;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .todo img {
+            width: 50px;
+            height: 50px;
+            margin-left: 10px;
+        }
+
+        .row {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background-color: #798aa4;
+            border-radius: 30px;
+            padding-left: 30px;
+            margin-bottom: 25px;
+            width: 100%;
+            max-width: 400px;
+        }
+
+        input {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            border-radius: 30px;
+            outline: none;
+            font-size: 16px;
+            background: transparent;
+            color: #fff;
+        }
+
+        input::placeholder {
+            color: #cce0ff;
+        }
+
+        button {
+            padding: 16px 20px;
+            border: none;
+            border-radius: 30px;
+            background: #f28500ad;
+            color: #fafbfc;
+            font-weight: bold;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+
+        ul {
+            width: 100%;
+            max-width: 400px;
+            padding-left: 0;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 10px 40px 10px 50px;
+            margin: 10px 0;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            user-select: none;
+            cursor: pointer;
+            position: relative;
+            font-size: 20px;
+            line-height: 28px;
+            min-height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        ul li::before {
+            content: "";
+            position: absolute;
+            height: 28px;
+            width: 28px;
+            border-radius: 50%;
+            background-image: url('Resources/unchecked.png');
+            background-size: cover;
+            background-position: center;
+            top: 50%;
+            left: 10px;
+            transform: translateY(-50%);
+        }
+
+        ul li.checked {
+           color: grey;
+           text-decoration: line-through;
+        }
+        ul li.checked::before {
+            background-image: url('Resources/checked.png');
+        }
+
+        .close {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 22px;
+            color: #888;
+            cursor: pointer;
+            background: none;
+            border: none;
+            outline: none;
+            padding: 0 5px;
+            transition: color 0.2s;
+        }
+        .close:hover {
+            color: #df0d0d;
+        }
