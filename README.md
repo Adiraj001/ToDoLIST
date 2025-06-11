@@ -10,14 +10,14 @@ A simple and intuitive To-Do List web application that helps you stay organized 
 
 💾 Tasks persist in local storage (if implemented)
 
-##🛠️ Tech Stack
+## 🛠️ Tech Stack
 HTML
 
 CSS
 
 JavaScript
 
-##📦 How to Use
+## 📦 How to Use
 Clone the repository:
 
 git clone https://github.com/Adiraj001/ToDoLIST.git
